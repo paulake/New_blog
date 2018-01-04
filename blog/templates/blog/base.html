@@ -1,13 +1,71 @@
+<!DOCTYPE html>
 {% load staticfiles %}
+
 <html>
     <head>
-        <title>Präänik</title>
+        <meta charset="UTF-8">
+        <title>VIBRANT KINGDOMS</title><link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type='text/scc'> 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
-    <body>
+    
+    <style>
+    body{ margin:0px; background:#000;}
+    #bg_container-VIDEO{ height:100%; width:100%; }
+    #bg{ position:absolute; width:100%; height:100%; overflow:hidden}
+    #content-LUULE{ position:absolute; top:50px; padding:50px; color:#191C19; text-shadow:#D0DDDE 1px 1px; opacity:0.2; font-family:'Bungee', cursive; font-size: 100px;}
+    .copyright{
+        width:40px;
+        height:40px;
+        margin: 40px;
+        float: right;
+        top:50px;
+    }
+
+    
+a.Poiss:link{color: #191C19;text-decoration: none;}
+a.Poiss:visited{color: #191C19;text-decoration: none;}
+a.Poiss:hover{color: #191C19;text-decoration: none;}
+a.Poiss:active{color: #191C19;text-decoration: none;}
+
+a.Hence:link{color: #191C19;text-decoration: none;}
+a.Hence:visited{color: #191C19;text-decoration: none;}
+a.Hence:hover{color: #191C19;text-decoration: none;}
+a.Hence:active{color: #191C19;text-decoration: none;}
+
+a.Otsis:link{color: #191C19;text-decoration: none;}
+a.Otsis:visited{color: #191C19;text-decoration: none;}
+a.Otsis:hover{color: #191C19;text-decoration: none;}
+a.Otsis:active{color: #191C19;text-decoration: none;}
+
+a.Pyssi:link{color: #191C19;text-decoration: none;}
+a.Pyssi:visited{color: #191C19;text-decoration: none;}
+a.Pyssi:hover{color: #191C19;text-decoration: none;}
+a.Pyssi:active{color: #191C19;text-decoration: none;}
+
+a.P66sast:link{color: #191C19;text-decoration: none;}
+a.P66sast:visited{color: #191C19;text-decoration: none;}
+a.P66sast:hover{color: #191C19;text-decoration: none;}
+a.P66sast:active{color: #191C19;text-decoration: none;}
+
+a.Tihedast:link{color: #191C19;text-decoration: none;}
+a.Tihedast:visited{color: #191C19;text-decoration: none;}
+a.Tihedast:hover{color: #191C19;text-decoration: none;}
+a.Tihedast:active{color: #191C19;text-decoration: none;}
+
+a.Tihnikust:link{color: #191C19;text-decoration: none;}
+a.Tihnikust:visited{color: #191C19;text-decoration: none;}
+a.Tihnikust:hover{color: #191C19;text-decoration: none;}
+a.Tihnikust:active{color: #191C19;text-decoration: none;}
+
+    </style>
+
+    </head>
+
+
+<body>
         <div class="page-header">
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -15,10 +73,46 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
+                    
+
+
+    <!-- BACKGROUND VIDEO-->
+        <div id="bg_container-VIDEO">
+        
+        <video id="bg" controls preload played loop autoplay="autoplay" autobuffer="autobuffer">
+        <source src="300.mov" type="video/mov">
+        </video>
+
+        </div>
+        <!-- LUULE--> 
+        <div id="content-LUULE">
+        <a href="Hence" class="Hence"><p>&#8756;</p></a>
+        <a href="Poiss" class="Poiss"><h1>Poiss</h1></a>
+        <a href="Otsis" class="Otsis"><h2>otsis</h2>
+        <a href="Pyssi" class="Pyssi"><h3>p&uuml;ssi</h3>
+        <a href="P66sast" class="P66sast"><h4>p&otilde;&otilde;sast</h4>
+        <a href="Tihedast" class="Tihedast"><h5>tihedast</h5>
+        <a href="Tihnikust" class="Tihnikust"><h6>tihnikust<p>p&otilde;randat mustaval lagendikul</p></h6>
+
+        </div>
+
+        <!-- BACKGROUND MUSIC
+        <embed height="0" width="0" 
+        src= "https://www.youtube.com/embed/rPy5GXul1AI/v/VIDEO_ID&autoplay=1&loop=1">-->
+
+        <!-- Start of copyright -->
+        <div class="copyright">
+            &copy; 2016 Paula Salurand. All rights reserved.
+        
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
         </div>
     </body>
+</html>
+        </div>
+
+    </body>
+
 </html>
