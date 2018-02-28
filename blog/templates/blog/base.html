@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <!-- hidden link -->
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+    {% block styles %}
     
         <style>
         body{ margin:0px; background:#000; max-width:1000;}
@@ -61,6 +61,7 @@
         a.Tihnikust:active{color: #191C19;text-decoration: none;}
 
         </style>
+        {% endblock styles %}
     </head>
 
     
