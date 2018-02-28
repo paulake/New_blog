@@ -5,6 +5,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.shortcuts import render_to_response
  
 	
 def post_new(request):
@@ -42,4 +43,6 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
+def home_view(request):
 
+	return render_to_response('blog/home.html')
