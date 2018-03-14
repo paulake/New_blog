@@ -10,7 +10,7 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
     # url(r'^post/category/(?P<category_name>)/$', views.post_list, name='categorised_list'),
     path('post/category/<category_name>/', views.post_list, name='categorised_list'),
-    url(r'^Cinema4D/', include ('Cinema4D.urls')),
+    
 
 ]
 
