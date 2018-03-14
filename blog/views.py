@@ -21,8 +21,8 @@ def post_new(request):
 		form = PostForm()
 	return render(request, 'blog/post_edit.html', {'form': form})
     
-def post_list(request):
-	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+def post_list(request, category_name):
+	posts = Post.objects.filter(published_date__lte=timezone.now(), category=category_name).order_by('published_date')
 	return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
