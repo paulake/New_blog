@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^Articles/', include ('Articles.urls')),
     url(r'^About/', include ('About.urls')),
     url(r'^Multidisciplinary/', include ('Multidisciplinary.urls')),
+    url(r'^Research/', include ('Research.urls')),
     
 ]
