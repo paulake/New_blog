@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'Cinema4D',
     'Articles',
     'About',
-    'Multidisciplinary'
-    'Research'
+    'Multidisciplinary',
+    'Research',
 ]
 
 MIDDLEWARE = [
