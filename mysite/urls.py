@@ -21,4 +21,6 @@ urlpatterns = [
     url(r'', include('blog.urls')),
     url(r'^Cinema4D/', include ('Cinema4D.urls')),
     url(r'^Articles/', include ('Articles.urls')),
+    url(r'^About/', include ('About.urls')),
+    
 ]

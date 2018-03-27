@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'Cinema4D',
     'Articles',
+    'About',
 ]
 
 MIDDLEWARE = [
