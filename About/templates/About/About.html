@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
   <title>Harrison Kinsley</title>
   <meta charset="utf-8" />
 </head>
-
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% block styles %}
 <body class="body" style="background-color:#f6f6f6">
   <div>
      {% block content %}
