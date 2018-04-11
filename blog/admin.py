@@ -3,6 +3,6 @@ from .models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    fields = ('author', 'title')
+    fields = ('title', 'author')
 
 admin.site.register(Post, PostAdmin)
