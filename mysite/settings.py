@@ -37,12 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.flatpages',
+    'django.contrib.sites',
     'blog',
     'Cinema4D',
     'Articles',
     'About',
     'Multidisciplinary',
     'Research',
+                  
 ]
 
 MIDDLEWARE = [
