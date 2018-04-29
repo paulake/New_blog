@@ -9,6 +9,11 @@ body {
     padding-left: 15px;
 }
 
+.header{
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 .page-header {
     background-color: #300A11;
     margin-top: 0;
@@ -23,6 +28,12 @@ body {
 
 .content {
     margin-left: 40px;
+}
+
+.sticky{
+    position:fixed;
+    top 0;
+    width 100%;
 }
 
 h1, h2, h3, h4 {
