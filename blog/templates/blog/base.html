@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-
 <html>
-    <head>
     
-    </head>
         <meta charset="UTF-8">
         <title>VIBRANT KINGDOMS</title><link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type='text/css'> 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -13,9 +10,11 @@
         <!-- hidden link -->
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link rel="stylesheet" href="{% static 'js/blog.js' %}">
-    {% block styles %}
-    
-        <style>
+   
+    <head>
+    {% block styles %} 
+    <style>
+
         body{ margin:0px; background:#000; max-width:1000;}
         #bg_container-VIDEO{ height:800px; overflow:auto; }
         #bg{ width: 100%; }
@@ -27,8 +26,6 @@
             margin: 40px;
             float: right;
             top:50px;
-
-
         }
 
 
@@ -71,6 +68,7 @@
 
         </style>
         {% endblock styles %}
+        </head>
     
 
     
@@ -84,7 +82,6 @@
                     
 
         <body>
-
         <div class="header" id ="myHeader">
          <h1>header</h1>
         </div>
@@ -123,18 +120,16 @@
                         
                 </div>-->
                 {% block content %}
-
-
-                        {% endblock %}
+                {% endblock %}
                 
             <!-- BACKGROUND VIDEO</div>
              </div>-->
 
              
-  <div class="content">
-    content
-  </div>
-  <footer class="footer"></footer>
+            <div class="content">
+            content
+            <footer class="footer"></footer>
+            </div>
 
 </body>
         
