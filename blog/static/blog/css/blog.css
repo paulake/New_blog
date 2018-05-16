@@ -30,7 +30,7 @@ body {
 }
 
 .h1, h2, h3, h4 {
-    font-family: '', cursive;
+    font-family: 'Arial', cursive;
 }
 
 .date {
@@ -56,6 +56,6 @@ body {
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post h1 a, .post h2 a:visited {
     color: #4FA7A7;
 }
