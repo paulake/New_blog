@@ -1,7 +1,7 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {myFunction(){
 
     // Get the header
     var header = document.getElementById("myHeader");
@@ -17,6 +17,6 @@ $( document ).ready(function() {
         header.classList.remove("sticky");
       }
     }
-
+}}
 });
 
