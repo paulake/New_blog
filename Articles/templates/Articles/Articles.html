@@ -1,18 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
 <html>
+    <meta charset="UTF-8">
 
-    <head>
-
-    <meta charset="utf-8">
-      
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
       
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">s
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+       <head>
+
+       <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+    {% block styles %} 
+    <style>
+
+    body{ margin:0px; background:#000; max-width:100%;}
+    #bg{ width: 100%; }
+    #myHeader {opacity:0.4; background:#0D3E3D;color:#135F5F;}
         
-        <title>Javascript</title>
+        <title>Articles</title>
         
         <style type="text/css">
         
@@ -114,6 +127,7 @@
         
         </style>
     
+    {% endblock styles %}
     </head>
 
     <body>
@@ -211,8 +225,20 @@
   </div>
 </div>
           </div>
+
+          <div class="header" id="myHeader">
+         <h1>Paula Salurand</h1>
+        </div>
+     {% block content %}
+     <p>It's here!</p>
+     {% endblock %} 
+  </div>
+
+  <div class="content">
       
       <div id="footer">
+
+       </div>
       
         <div class="row">
           
@@ -232,7 +258,7 @@
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
         
-        <script type="text/javascript">
+        <script type="text/javascript" src="{% static 'blog/js/blog.js' %}">
             
             document.getElementById("one-circle").onclick = function() {
                               
