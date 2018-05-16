@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en">
+<html>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <head>
-  <title>Harrison Kinsley</title>
-  <meta charset="utf-8" />
-</head>
-<link rel="stylesheet" href="{% static 'css/About.css' %}">
+  
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+    {% block styles %} 
+    <style>
 
-<body class="body" style="background-color:#f6f6f6">
-  <div>
+    body{ margin:0px; background:#000; max-width:100%;}
+    #bg{ width: 100%; }
+    #myHeader {opacity:0.4; background:#0D3E3D;color:#135F5F;}
+
+	<title>Make some whack roll here</title>
+	
+	</style>
+
+	{% endblock styles %}
+</head>
+
+<body>
+	<div>
+	<div class="header" id="myHeader">
+         <h1>Paula Salurand</h1>
+        </div>
+
+  
      {% block content %}
      <p>I am an Estonian combined arts researcher from Tartu, Estonia. An alumni from ArtScience of Art Academy in the Hague http://www.interfaculty.nl/2016/05/
 
@@ -29,6 +48,11 @@ Artist Statement
 I track the patterns. And sometimes I get them logically wrong. But art forgives me. </p>
      {% endblock %} 
   </div>
+<div class="content">
+            content
+            <footer class="footer"></footer>
+            </div>
+<script type="text/javascript" src="{% static 'blog/js/blog.js' %}"></script>
 </body>
 
 </html>
