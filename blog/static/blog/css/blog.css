@@ -12,6 +12,12 @@ body {
   color: #A74F4F;
 }
 
+.paragraph {
+  padding: 10px 16px;
+  background: #312F2F;
+  color: #A74F4F;
+}
+
 /* Page content */
 .content {
   padding: 16px;
