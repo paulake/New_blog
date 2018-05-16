@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load staticfiles %}
+<html>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <head>
-  <title>Harrison Kinsley</title>
-  <meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+    {% block styles %} 
+    <style>
+
+    body{ margin:0px; background:#000; max-width:100%;}
+    #bg{ width: 100%; }
+    #myHeader {opacity:0.4; background:#0D3E3D;color:#135F5F;}
+
+	<title>Hp</title>
+	
+	</style>
+        {% endblock styles %}
 </head>
 
-<body class="body" style="background-color:#f6f6f6">
-  <div>
-     {% block content %}
-     <p>It's a plane and a bird and a superman</p>
-     {% endblock %} 
-  </div>
+<body>
+	<div>
+	<div class="header" id="myHeader">
+         <h1>Paula Salurand</h1>
+        </div>
+	   {% block content %}
+	   <p>Diversesht</p>
+	   {% endblock %}	
+	</div>
+
+	<div class="content">
+            content
+            <footer class="footer"></footer>
+            </div>
+<script type="text/javascript" src="{% static 'blog/js/blog.js' %}"></script>
 </body>
 
 </html>
