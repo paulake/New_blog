@@ -57,5 +57,5 @@ body {
 }
 
 .post h1 a, .post h2 a:visited {
-    color: #4FA7A7;
+   opacity:0.4; color:#4FA7A7;
 }
